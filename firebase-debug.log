@@ -20,3 +20,100 @@ You're about to initialize a Firebase project in this directory:
 
   C:\Users\joman\documents\python\showdetails
 
+[debug] [2023-08-02T06:25:10.984Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2023-08-02T06:25:10.985Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2023-08-02T06:26:53.345Z] > refreshing access token with scopes: []
+[debug] [2023-08-02T06:26:53.346Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-08-02T06:26:53.346Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-08-02T06:26:53.811Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-08-02T06:26:53.812Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-08-02T06:26:53.829Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2023-08-02T06:26:53.829Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"showdetails","name":"showdetails"}
+[debug] [2023-08-02T06:26:55.846Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2023-08-02T06:26:55.846Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/cp.5312319554150165461"}
+[debug] [2023-08-02T06:26:55.847Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5312319554150165461 [none]
+[debug] [2023-08-02T06:26:57.697Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5312319554150165461 200
+[debug] [2023-08-02T06:26:57.697Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5312319554150165461 {"name":"operations/cp.5312319554150165461"}
+[debug] [2023-08-02T06:26:58.202Z] [Project Creation Poller] Retrying task index 0
+[debug] [2023-08-02T06:26:58.203Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5312319554150165461 [none]
+[debug] [2023-08-02T06:26:59.738Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5312319554150165461 200
+[debug] [2023-08-02T06:26:59.738Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5312319554150165461 {"name":"operations/cp.5312319554150165461","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true,"ready":true},"done":true,"response":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.Project","projectNumber":"955410575304","projectId":"showdetails","lifecycleState":"ACTIVE","name":"showdetails","createTime":"2023-08-02T06:26:55.841Z"}}
+[debug] [2023-08-02T06:26:59.740Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1beta1/projects/showdetails:addFirebase [none]
+[debug] [2023-08-02T06:27:03.528Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1beta1/projects/showdetails:addFirebase 200
+[debug] [2023-08-02T06:27:03.528Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/showdetails:addFirebase {"name":"operations/workflows/N2I5NzdhZGYtYmFmMS00NmRjLWE1NTQtY2Q1ZWVlOWMyMjFi"}
+[debug] [2023-08-02T06:27:03.528Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/N2I5NzdhZGYtYmFmMS00NmRjLWE1NTQtY2Q1ZWVlOWMyMjFi [none]
+[debug] [2023-08-02T06:27:04.860Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/N2I5NzdhZGYtYmFmMS00NmRjLWE1NTQtY2Q1ZWVlOWMyMjFi 200
+[debug] [2023-08-02T06:27:04.860Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/N2I5NzdhZGYtYmFmMS00NmRjLWE1NTQtY2Q1ZWVlOWMyMjFi {"name":"operations/workflows/N2I5NzdhZGYtYmFmMS00NmRjLWE1NTQtY2Q1ZWVlOWMyMjFi"}
+[debug] [2023-08-02T06:27:05.367Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2023-08-02T06:27:05.367Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/N2I5NzdhZGYtYmFmMS00NmRjLWE1NTQtY2Q1ZWVlOWMyMjFi [none]
+[debug] [2023-08-02T06:27:06.757Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/N2I5NzdhZGYtYmFmMS00NmRjLWE1NTQtY2Q1ZWVlOWMyMjFi 200
+[debug] [2023-08-02T06:27:06.757Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/N2I5NzdhZGYtYmFmMS00NmRjLWE1NTQtY2Q1ZWVlOWMyMjFi {"name":"operations/workflows/N2I5NzdhZGYtYmFmMS00NmRjLWE1NTQtY2Q1ZWVlOWMyMjFi"}
+[debug] [2023-08-02T06:27:07.769Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2023-08-02T06:27:07.771Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/N2I5NzdhZGYtYmFmMS00NmRjLWE1NTQtY2Q1ZWVlOWMyMjFi [none]
+[debug] [2023-08-02T06:27:09.157Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/N2I5NzdhZGYtYmFmMS00NmRjLWE1NTQtY2Q1ZWVlOWMyMjFi 200
+[debug] [2023-08-02T06:27:09.158Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/N2I5NzdhZGYtYmFmMS00NmRjLWE1NTQtY2Q1ZWVlOWMyMjFi {"name":"operations/workflows/N2I5NzdhZGYtYmFmMS00NmRjLWE1NTQtY2Q1ZWVlOWMyMjFi"}
+[debug] [2023-08-02T06:27:11.159Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2023-08-02T06:27:11.160Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/N2I5NzdhZGYtYmFmMS00NmRjLWE1NTQtY2Q1ZWVlOWMyMjFi [none]
+[debug] [2023-08-02T06:27:12.153Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/N2I5NzdhZGYtYmFmMS00NmRjLWE1NTQtY2Q1ZWVlOWMyMjFi 200
+[debug] [2023-08-02T06:27:12.154Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/N2I5NzdhZGYtYmFmMS00NmRjLWE1NTQtY2Q1ZWVlOWMyMjFi {"name":"operations/workflows/N2I5NzdhZGYtYmFmMS00NmRjLWE1NTQtY2Q1ZWVlOWMyMjFi"}
+[debug] [2023-08-02T06:27:16.158Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2023-08-02T06:27:16.159Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/N2I5NzdhZGYtYmFmMS00NmRjLWE1NTQtY2Q1ZWVlOWMyMjFi [none]
+[debug] [2023-08-02T06:27:17.760Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/N2I5NzdhZGYtYmFmMS00NmRjLWE1NTQtY2Q1ZWVlOWMyMjFi 200
+[debug] [2023-08-02T06:27:17.760Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/N2I5NzdhZGYtYmFmMS00NmRjLWE1NTQtY2Q1ZWVlOWMyMjFi {"name":"operations/workflows/N2I5NzdhZGYtYmFmMS00NmRjLWE1NTQtY2Q1ZWVlOWMyMjFi","done":true,"response":{"@type":"type.googleapis.com/google.firebase.service.v1beta1.FirebaseProject","projectId":"showdetails","projectNumber":"955410575304","displayName":"showdetails","name":"projects/showdetails","resources":{"hostingSite":"showdetails"}}}
+[info] 
+[info] === Your Firebase project is ready! ===
+[info] 
+[info] Project information:
+[info]    - Project ID: showdetails
+[info]    - Project Name: showdetails
+[info] 
+[info] Firebase console is available at
+[info] https://console.firebase.google.com/project/showdetails/overview
+[info] i  Using project showdetails (showdetails) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2023-08-02T06:30:52.356Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2023-08-02T06:30:52.701Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2023-08-02T06:30:52.701Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"10.1.0","browserURL":"https://www.gstatic.com/firebasejs/10.1.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/10.1.0/firebase.tgz"},"live":{"version":"10.1","browserURL":"https://www.gstatic.com/firebasejs/live/10.1/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/10.1/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/10.1.0/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/10.1.0/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/10.1.0/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/10.1.0/firebase-auth/cordova.js","functions":"https://www.gstatic.com/firebasejs/10.1.0/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/10.1.0/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/10.1.0/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/10.1.0/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/10.1.0/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/10.1.0/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/10.1.0/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/10.1.0/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/10.1.0/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/10.1.0/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/10.1.0/firebase-firestore.memory.js"}}
+[info] +  Wrote public/index.html 
+[info] 
+[info] i  Didn't detect a .git folder. Assuming C:\Users\joman\documents\python\showdetails is the project root. 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=1058885156&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2023-08-02T06:30:53.544Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2023-08-02T06:30:53.545Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2023-08-02T06:30:54.033Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2023-08-02T06:30:54.033Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2023-08-02T06:30:54.057Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2023-08-02T06:30:54.573Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2023-08-02T06:30:54.573Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"jomanozgml","id":19203873,"node_id":"MDQ6VXNlcjE5MjAzODcz","avatar_url":"https://avatars.githubusercontent.com/u/19203873?v=4","gravatar_id":"","url":"https://api.github.com/users/jomanozgml","html_url":"https://github.com/jomanozgml","followers_url":"https://api.github.com/users/jomanozgml/followers","following_url":"https://api.github.com/users/jomanozgml/following{/other_user}","gists_url":"https://api.github.com/users/jomanozgml/gists{/gist_id}","starred_url":"https://api.github.com/users/jomanozgml/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/jomanozgml/subscriptions","organizations_url":"https://api.github.com/users/jomanozgml/orgs","repos_url":"https://api.github.com/users/jomanozgml/repos","events_url":"https://api.github.com/users/jomanozgml/events{/privacy}","received_events_url":"https://api.github.com/users/jomanozgml/received_events","type":"User","site_admin":false,"name":"Manoj Shrestha","company":"Coles Group","blog":"https://www.linkedin.com/in/manojshrestha8080/","location":"Melbourne, Australia","email":"jomanozgml@gmail.com","hireable":null,"bio":null,"twitter_username":null,"public_repos":10,"public_gists":0,"followers":3,"following":6,"created_at":"2016-05-05T09:30:43Z","updated_at":"2023-08-02T02:29:19Z","private_gists":0,"total_private_repos":0,"owned_private_repos":0,"disk_usage":6267,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as jomanozgml 
+[info] 
+[debug] [2023-08-02T06:31:29.088Z] >>> [apiv2][query] GET https://api.github.com/repos/jomanozgml/showdetails/actions/secrets/public-key type=owner
+[debug] [2023-08-02T06:31:29.563Z] <<< [apiv2][status] GET https://api.github.com/repos/jomanozgml/showdetails/actions/secrets/public-key 404
+[debug] [2023-08-02T06:31:29.564Z] <<< [apiv2][body] GET https://api.github.com/repos/jomanozgml/showdetails/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/actions/secrets#get-a-repository-public-key"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
