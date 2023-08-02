@@ -1,0 +1,22 @@
+[debug] [2023-08-02T06:25:10.153Z] ----------------------------------------------------------------------
+[debug] [2023-08-02T06:25:10.155Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\joman\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init hosting
+[debug] [2023-08-02T06:25:10.155Z] CLI Version:   12.4.6
+[debug] [2023-08-02T06:25:10.156Z] Platform:      win32
+[debug] [2023-08-02T06:25:10.156Z] Node Version:  v18.14.2
+[debug] [2023-08-02T06:25:10.157Z] Time:          Wed Aug 02 2023 16:25:10 GMT+1000 (Australian Eastern Standard Time)
+[debug] [2023-08-02T06:25:10.157Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-08-02T06:25:10.160Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2023-08-02T06:25:10.203Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-08-02T06:25:10.203Z] > authorizing via signed-in user (jomanozgml@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\joman\documents\python\showdetails
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Spreadsheet Processing Web App</title>
+    <style>
+        body {
+            background-color: #f2f2f2
+        }
+        table {
+            border-collapse: collapse;
+            width: 96%;
+            border: 1px solid #ddd; /* Add outside border */
+            background-color: #f9f9f9;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Spreadsheet Processing Web App</h1>
+    <form method="post" action="/search">
+        <label for="search_key">Search Key:</label>
+        <input type="text" id="search_key" name="search_key" value="{{ search_key }}">
+        <button type="submit">Search</button>
+    </form>
+
+    {% if results %}
+    <h2>Processed Data:</h2>
+    <table>
+        {% for i in range(results|length) %}
+        <tr>
+            <th>{{ header[i] }}</th>
+            <td>{{ results[i] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% endif %}
+
+</body>
+</html>
